@@ -5,36 +5,29 @@ console.log(random_num);
 // alert(random_num);
 // let random_num=2;
 let count = 0;
-do
-{
 if (a) {
-    let input = prompt
+    do {
+        let input = prompt("enter your guess");
+        input = Number.parseInt(input);
+        count++;
+        if(input>random_num) {
+            alert("the random no. is less than your input Try again");
+        }
+        else if(input<random_num) {
+            alert("the random no. is greater than your input Try again");
+        }
+        else {   
+            if(count<=5) {
+            alert("👍👍you won👍👍 you guessed in "+count +" attempts, right number is : "+ random_num); 
+            }
+            else {
+            alert("👍👍you loss👍👍 you guessed in "+count +" attempts, right number is :  "+ random_num +"  try again");
+            }
+            break;
+        }
+    } while(count!=5);
 }
-let input = prompt("enter your guess");
-input = Number.parseInt(input);
-count++;
-if(input>random_num)
-{
-    alert("the random no. is less than your input Try again");
-    
-}
-else if(input<random_num)
-{
-    alert("the random no. is greater than your input Try again");
-    
-}
-else
-{   if(count<=5)
-    {
-        alert("👍👍you won👍👍 you guessed in "+count +" attempts, right number is : "+ random_num); 
-    }
-    else
-    {
-    alert("👍👍you loss👍👍 you guessed in "+count +" attempts, right number is :  "+ random_num +"  try again");
-    }
-    break;
+else {
+    alert("You quite the game!!");
 }
 }
-while(count!=5);
-}
-
