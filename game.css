@@ -1,0 +1,43 @@
+body{
+    margin:0px;
+}
+.maincontainer{
+    height: 800px;
+    width:97%;
+    margin: 10px 20px;
+    background-color: #d0e09d;
+    border-radius: 10px;
+
+}
+.middlecontainer{
+    height : 160px;
+    width: 1000px;
+    background-color: rgba(1, 1, 0, 0.5);
+    border: 2px solid rgb(5, 4, 10);
+    position: relative;
+    left : 200px;
+    top: 100px;
+    border-radius: 15px;
+    padding: 10px;
+    text-align: justify;
+}
+#rules{
+    font-family: 'Great Vibes', cursive;
+    font-family: 'Merriweather', serif;
+    font-size: 24px;
+    color: white;
+}
+.button{
+    position: relative;
+    top: 300px;
+    left: 600px;
+    height: 30px;
+    width: 200px;
+    background-color: blue;
+    border-radius: 10px;
+    color: white;
+  
+}
+.button:hover{
+    background-color: green;
+}
